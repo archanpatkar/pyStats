@@ -56,13 +56,14 @@ def MeanAbsoluteDeviation(data):
     return Mean(deviation);
 
 def Median(data):
-    med = [val for val in data].sort();
+    med = [val for val in data];
+    med.sort();
     if even(len(med)):
         one = len(med)/2;
         two = one + 1;
         return med[(one + two)//2];
     else:
-        return med[((len(med)-1)//2)];
+        return med[len(med)//2];
 
 def even(number):
     return abs(number % 2) == 0;
