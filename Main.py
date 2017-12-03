@@ -1,7 +1,6 @@
 from pyStats import Stats
 from pprint import pprint;
 
-
 number = [1,1,2,34,4,4,2,2,2,1,3,5,2,1,3];
 
 print("Range =>",Stats.Range([13, 13, 13, 13, 14, 14, 16, 18, 21]))
