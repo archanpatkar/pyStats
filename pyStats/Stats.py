@@ -61,7 +61,7 @@ def Median(data):
     if even(len(med)):
         one = len(med)/2;
         two = one + 1;
-        return med[(one + two)//2];
+        return (med[one] + med[two])//2;
     else:
         return med[len(med)//2];
 
